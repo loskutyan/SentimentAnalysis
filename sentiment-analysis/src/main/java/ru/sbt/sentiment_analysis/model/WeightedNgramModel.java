@@ -9,12 +9,12 @@ import ru.yandex.bolts.collection.MapF;
  */
 public class WeightedNgramModel {
 
-    private static final double MIN_NEUTRAL_WEIGHT = -4.38;
-    private static final double MAX_NEUTRAL_WEIGHT = 5.05;
+    private static final double MIN_NEUTRAL_WEIGHT = -2.3762728087852047;
+    private static final double MAX_NEUTRAL_WEIGHT = 1.1802903196823769;
 
     private final MapF<String, Double> ngramWeights;
 
-    public WeightedNgramModel(MapF<String, Double> ngramWeights) {
+    WeightedNgramModel(MapF<String, Double> ngramWeights) {
         this.ngramWeights = ngramWeights;
     }
 

@@ -6,7 +6,6 @@ import java.io.InputStreamReader;
 import java.nio.file.Paths;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sun.org.apache.bcel.internal.util.ClassLoader;
 
 import ru.yandex.bolts.collection.Cf;
 import ru.yandex.bolts.collection.ListF;
@@ -20,8 +19,8 @@ import ru.yandex.jackson.datatype.bolts.BoltsModule;
  */
 public class SentimentModelWeightsImporter {
 
-    private static final double NEGATIVE_COEFFICIENT = -3.0;
-    private static final String SEPARATOR = ",";
+    private static final double NEGATIVE_COEFFICIENT = -1.0;
+    private static final String SEPARATOR = ";";
 
     public void read(String path) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
