@@ -26,7 +26,7 @@ public class Stemmer {
     private final ProcessBuilder mystemBuilder;
 
     public Stemmer(String path) {
-        String mystemPath = Paths.get(path, "mystem").toString();
+        String mystemPath = Paths.get(path, "mystem.exe").toString();
         File dir = new File(Paths.get(mystemPath).getParent().toString());
         this.mystemBuilder = new ProcessBuilder()
                 .command(mystemPath, "-igdc", "--format", "json")
